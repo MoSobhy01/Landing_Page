@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitGub Repo](https://github.com/MoSobhy01/Landing_Page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) 
+- Live Site URL: [Website](https://mosobhy01.github.io/Landing_Page) 
 
 ## My process
 
