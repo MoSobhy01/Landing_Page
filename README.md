@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [GitGub Repo](https://github.com/MoSobhy01/Landing_Page)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com) 
 
 ## My process
 
