@@ -133,6 +133,7 @@ body {
   padding-top: 100px;
   padding-bottom: 80px;
   background-image: url(../images/bg-curve-desktop.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -394,7 +395,7 @@ body {
     padding-top: 20px;
   }
   .motivation{
-    padding-top: 60px;
+    padding-top: 50px;
     background-image: url(../images/bg-curve-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
