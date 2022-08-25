@@ -110,6 +110,7 @@ body {
 }
 .subscribe .container .info input[type="email"] {
   padding-left: 15px;
+  width: calc(100% - 10px);
   height: 2.2rem;
   border: 0.5px solid gray;
   border-radius: 5px;
