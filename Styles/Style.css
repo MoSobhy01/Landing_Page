@@ -108,7 +108,7 @@ body {
   grid-template-columns: 1.5fr 1fr;
   perspective: 50px;
 }
-.subscribe .container .info input[type="email"] {
+.subscribe .container .info input.mail {
   padding-left: 15px;
   width: calc(100% - 10px);
   height: 2.2rem;
@@ -263,7 +263,7 @@ body {
   align-items: flex-start;
   perspective: 10px;
 }
-.getstart .container form input[type="email"] {
+.getstart .container form input.mail {
   width: 70%;
   height: 40%;
   padding: 15px;
