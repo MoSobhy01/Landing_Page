@@ -129,12 +129,15 @@ body {
   transform: translateZ(-0.5px);
 }
 .motivation {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f8f8fe;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .motivation .container {
+  background-color: #f8f8fe;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -388,5 +391,12 @@ body {
   .d2,
   .social {
     padding-top: 20px;
+  }
+  .motivation{
+    padding-top: 60px;
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
   }
 }
