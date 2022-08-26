@@ -104,14 +104,16 @@ body {
   padding-top: 20px;
 }
 .subscribe .container .info form {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   perspective: 50px;
 }
 .subscribe .container .info input.mail {
   padding-left: 15px;
-  width: calc(100% - 10px);
+  width: calc (100% - 10px);
   height: 2.2rem;
+  min-width: 300px;
   border: 0.5px solid gray;
   border-radius: 5px;
   margin-right: 10px;
@@ -119,15 +121,26 @@ body {
 .subscribe .container .info input[type="submit"] {
   background-color: var(--Bright-Blue);
   border: none;
+  min-width: 200px;
+  height: 2.2rem;
   border-radius: 5px;
   color: var(--Grayish-Blue);
   font-weight: bold;
 }
+@media (max-width: 1199px) {
+  .subscribe .container .info form {
+    justify-content: center;
+  }
+  .subscribe .container .info input.mail {
+    margin-bottom: 20px;
+  }
+}
+
 .subscribe .container .info input[type="submit"]:hover {
   cursor: pointer;
 }
-.subscribe .container .info input[type="submit"]:hover {
-  transform: translateZ(-0.5px);
+.subscribe .container .info input[type="submit"]:active {
+  transform: translateZ(0.5px);
 }
 .motivation {
   padding-top: 100px;
@@ -273,8 +286,8 @@ body {
   margin-bottom: 15px;
   border-radius: 5px;
 }
-.getstart .container form input[type="email"]:focus {
-  border: 2px solid hsl(238deg 22% 30%);
+.getstart .container form input.mail:focus {
+  border: 1px solid hsl(238deg 22% 30%);
 }
 .getstart .container form input[type="submit"] {
   border-radius: 5px;
@@ -282,7 +295,7 @@ body {
   color: white;
   font-weight: bold;
   border: none;
-  max-width: fit-content;
+  min-width: 250px;
   height: 40%;
 }
 .getstart .container form input[type="submit"]:hover {
@@ -382,6 +395,7 @@ body {
     font-size: 1.6rem;
     line-height: 2rem;
   }
+
   .getstart .container form {
     align-items: center;
   }
@@ -394,11 +408,33 @@ body {
   .social {
     padding-top: 20px;
   }
-  .motivation{
+  .motivation {
     padding-top: 50px;
     background-image: url(../images/bg-curve-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
   }
+}
+.footer {
+  position: relative;
+}
+.footer .copy {
+  min-width: 350px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer .copy i {
+  color: var(--Moderate-Cyan);
+}
+.footer .copy a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--Moderate-Cyan);
+}
+.footer .copy a:hover {
+  font-weight: 600;
 }
