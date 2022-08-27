@@ -107,33 +107,26 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  perspective: 50px;
+  gap: 10px;
 }
 .subscribe .container .info input.mail {
   padding-left: 15px;
   width: calc (100% - 10px);
-  height: 2.2rem;
+  height: 2.7rem;
+  flex: 1.5;
   min-width: 300px;
   border: 0.5px solid gray;
   border-radius: 5px;
-  margin-right: 10px;
 }
 .subscribe .container .info input[type="submit"] {
   background-color: var(--Bright-Blue);
   border: none;
   min-width: 200px;
-  height: 2.2rem;
+  height: 2.7rem;
+  flex: 1;
   border-radius: 5px;
   color: var(--Grayish-Blue);
   font-weight: bold;
-}
-@media (max-width: 1199px) {
-  .subscribe .container .info form {
-    justify-content: center;
-  }
-  .subscribe .container .info input.mail {
-    margin-bottom: 20px;
-  }
 }
 
 .subscribe .container .info input[type="submit"]:hover {
@@ -185,7 +178,7 @@ body {
 }
 .motivation .container .info a {
   color: #3da08f;
-  padding: 5px;
+  padding: 30px;
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -272,18 +265,16 @@ body {
 
 .getstart .container form {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
-  perspective: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .getstart .container form input.mail {
-  width: 70%;
-  height: 40%;
+  height: 2.7rem;
+  flex: 1.5;
   padding: 15px;
   outline: none;
   border: none;
-  margin-bottom: 15px;
   border-radius: 5px;
 }
 .getstart .container form input.mail:focus {
@@ -293,10 +284,10 @@ body {
   border-radius: 5px;
   background-color: var(--Bright-Blue);
   color: white;
+  height: 2.7rem;
+  flex: 1;
   font-weight: bold;
   border: none;
-  min-width: 250px;
-  height: 40%;
 }
 .getstart .container form input[type="submit"]:hover {
   cursor: pointer;
@@ -396,9 +387,6 @@ body {
     line-height: 2rem;
   }
 
-  .getstart .container form {
-    align-items: center;
-  }
   .footer .container .logoi {
     margin-left: auto;
     margin-right: auto;
@@ -437,4 +425,25 @@ body {
 }
 .footer .copy a:hover {
   font-weight: 600;
+}
+@media (max-width: 1199px) {
+  .subscribe .container .info form {
+    justify-content: center;
+  }
+  .subscribe .container .info input.mail {
+    flex: 1;
+  }
+
+  .getstart .container form {
+    align-items: center;
+  }
+  .getstart .container form input.mail {
+    flex: 1;
+    min-width: 300px;
+  }
+  .getstart .container form input[type="submit"] {
+    flex: 1;
+    padding: 0px;
+    min-width: 300px;
+  }
 }
